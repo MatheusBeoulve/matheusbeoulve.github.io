@@ -17,7 +17,13 @@
         </div>
     </header>
     <main>
-        <h1 id="sucesso">Sua conta foi criada com sucesso!</h1>
+        <form action="sucesso.html">
+            <label for="usuario">Usuario</label>
+            <input id="usuario" required minlength="4" maxlength="24"/>
+            <label for="senha">Senha</label>
+            <input id="senha" type="password" required minlength="8" maxlength="16"/>
+            <input id="enviar" type="submit"/>
+        </form>
     </main>
 </body>
 </html>
