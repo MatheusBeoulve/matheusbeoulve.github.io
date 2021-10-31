@@ -1,0 +1,62 @@
+html {
+    width: 90%;
+    height: auto;
+    margin-right: 1rem;
+    margin-left: 1rem;
+}
+
+#sucesso {
+    text-align: center;
+}
+
+body, header, main {
+    width: 100%;
+}
+
+header {
+    display: flex;
+    align-items: center;
+}
+
+#titulo, #criar-conta, #criar-conta:link, #sucesso, [for=usuario], [for=senha] {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#titulo {
+    color: deeppink;
+}
+
+#criar-conta, #criar-conta:link {
+    color: white;
+    background-color: deeppink;
+    font-size: larger;
+    text-decoration: none;
+    border: 1px deeppink solid;
+    border-radius: 0.25rem;
+    padding-block: 0.1rem;
+    padding-inline: 0.5rem;
+}
+
+#menu {
+    margin-left: auto;
+}
+
+[for=usuario], [for=senha] {
+    font-weight: bold;
+}
+
+#enviar {
+    width: 5rem;
+    align-self: center;
+}
+
+form {
+    margin: 0 auto;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+}
+
+form * {
+    margin-top: 0.3rem;
+}
