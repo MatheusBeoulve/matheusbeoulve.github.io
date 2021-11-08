@@ -30,7 +30,7 @@ header {
     align-items: center;
 }
 
-#titulo, #criar-conta, #criar-conta:link, #sucesso, #conteudo, [for=usuario], [for=senha] {
+#titulo, #criar-conta, #criar-conta:link, #sucesso, #conteudo, form [for] {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -52,7 +52,7 @@ header {
     margin-left: auto;
 }
 
-[for=usuario], [for=senha] {
+form [for] {
     font-weight: bold;
 }
 
