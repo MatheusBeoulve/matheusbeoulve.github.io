@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de transacao de veiculo</title>
+    <link rel="stylesheet" href="main.css"/>
+    <script type="text/javascript" src="carro.js"></script>
+</head>
+<body class="full-width">
+    <header class="full-width">
+        <a class="text-size-large color-white text-bold" href="index.html">Registro de transacao para: </a>
+        <a class="text-size-medium color-white " href="carro.html">Carro</a>
+        <a class="text-size-medium color-white" href="moto.html">Moto</a>
+        <a class="text-size-medium color-white" href="outros.html">Outros</a>
+    </header>
+    <main style="width: 400px; margin: 0 auto;">
+        <h4>Registro de transacao para carro</h4>
+        <form action="confirmarenvio.html">
+            <label for="tipo-transacao">Tipo de transacao:</label>
+            <select name="tipo-transacao" required>
+                <option value="compra">Compra</option>
+                <option value="venda">Venda</option>
+                <option value="troca">Troca</option>
+            </select>
+
+            <label for="valor-veiculo">Valor da transacao em R$</label>
+            <input name="valor-veiculo" type="text" required minlength="3" maxlength="20"/>
+
+            <label for="nome-emissor">Nome do emissor</label>
+            <input name="nome-emissor" type="text" required minlength="8" maxlength="80"/>
+
+            <label for="nome-beneficiario">Nome do beneficiario</label>
+            <input name="nome-beneficiario" type="text" required minlength="8" maxlength="80"/>
+
+            <label for="ano-carro">Ano do carro</label>
+            <input name="ano-carro" type="text" required minlength="4" maxlength="4"/>
+
+            <div>
+                <label for="carro-assegurado">Carro assegurado?</label>
+                <input id="carro-assegurado" name="carro-assegurado" type="checkbox"/>
+            </div>
+
+            <div>
+                <label for="usou-seguro-carro">Ja foi usado o seguro?</label>
+                <input id="usou-seguro-carro" name="usou-seguro-carro" type="checkbox" disabled/>
+            </div>
+
+            <input type="submit"/>
+        </form>
+    </main>
+</body>
+</html>
